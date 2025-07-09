@@ -128,7 +128,7 @@ struct ExampleRunner : TopWindow {
     void RunTask(const String& name, int delay_ms, bool pass, bool with_warning = false) {
         if (tasks_cancelled) return;
 
-        logDisplay.Log(name, LogView::LOG_NORMAL, false); 
+        logDisplay.Log(name, LogView::LOG_NORMAL, false);
         logDisplay.Log(" Performing some work...", LogView::LOG_NORMAL, false);
         Sleep(delay_ms);
 
